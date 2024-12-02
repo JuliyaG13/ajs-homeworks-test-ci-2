@@ -16,15 +16,4 @@ describe('sortHeroesByHealth', () => {
       { name: 'мечник', health: 10 },
     ]);
   });
-
-  test('same object, reference check with toBe', () => {
-    const hero = { name: 'мечник', health: 10 };
-    expect(hero).toBe(hero); 
-  });
-
-  test('different object, reference check with toBe', () => {
-    const hero1 = { name: 'маг', health: 100 };
-    const hero2 = { name: 'маг', health: 100 };
-    expect(hero1).toBe(hero2); 
-  });
 });
